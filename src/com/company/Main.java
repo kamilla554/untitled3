@@ -3,8 +3,11 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Circle circle = new Circle();
-        System.out.println(circle.area(5));
-
+        CircleTest circle = new CircleTest();
+        circle.test();
+        Human human = new Human();
+        System.out.println(human.toString());
+        BookTest book= new BookTest();
+        book.test();
     }
 }

@@ -3,6 +3,10 @@ package com.company;
 public class Head {
     boolean status;
 
+    public Head(boolean status) {
+        this.status = status;
+    }
+
     public boolean isStatus() {
         return status;
     }
@@ -13,7 +17,7 @@ public class Head {
 
     @Override
     public String toString() {
-        if (status==true)
+        if (status)
         {
             return "Head is okay";
         }

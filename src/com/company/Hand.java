@@ -4,6 +4,11 @@ public class Hand  {
     boolean right;
     boolean left;
 
+    public Hand(boolean right, boolean left) {
+        this.right = right;
+        this.left = left;
+    }
+
     public boolean isRight() {
         return right;
     }
@@ -23,7 +28,7 @@ public class Hand  {
     @Override
     public String toString() {
         String temp;
-        if (right == true)
+        if (right)
         {
             temp="Right leg is okay, ";
         }
@@ -31,7 +36,7 @@ public class Hand  {
         {
             temp="Right leg needs help, ";
         }
-        if (left == true)
+        if (left)
         {
             temp=temp +"left leg is okay.";
         }
